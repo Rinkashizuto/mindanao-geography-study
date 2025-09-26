@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindanao Geography Study Guide - Mga Lalawigan at Kabisera</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parchment-overlay"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>🏝️ Mindanao Geography Study Guide</h1>
+            <p>Mga Rehiyon, Lalawigan, at Kabisera ng Mindanao</p>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+                <div class="progress-text" id="progressText">Progress: 0%</div>
+            </div>
+        </div>
+        
+        <div class="study-modes" id="studyModes">
+            <div class="mode-card" onclick="startProvinceQuiz()">
+                <h3>📝 Provinces & Capitals Quiz</h3>
+                <p>Test your knowledge with 50+ questions about provinces and their capitals</p>
+            </div>
+            
+            <div class="mode-card" onclick="startRegionQuiz()">
+                <h3>🗺️ Regions Quiz</h3>
+                <p>Learn which provinces belong to which regions of Mindanao</p>
+            </div>
+            
+            <div class="mode-card" onclick="showStudyList()">
+                <h3>📚 Complete Study List</h3>
+                <p>Browse all regions, provinces, and capitals organized by region</p>
+            </div>
+        </div>
+        
+        <div class="quiz-container" id="quizContainer">
+            <div class="quiz-header">
+                <h2>Geography Quiz</h2>
+                <div class="score-display" id="scoreDisplay">Score: 0/0</div>
+            </div>
+            
+            <div class="quiz-question" id="quizQuestion"></div>
+            
+            <div class="quiz-options" id="quizOptions"></div>
+            
+            <div class="quiz-controls">
+                <div class="quiz-info" style="color: #8B4513; font-size: 1em;">
+                    <span id="questionCounter">Question 1 of 50+</span>
+                </div>
+                <div>
+                    <button class="btn" onclick="goHome()">🏠 Back to Home</button>
+                    <button class="btn" id="nextBtn" onclick="nextQuestion()" disabled>Next Question →</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="study-list" id="studyList">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2 style="color: #8B4513;">Complete Study Reference</h2>
+                <button class="btn" onclick="goHome()">🏠 Back to Home</button>
+            </div>
+            
+            <div id="regionsList"></div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+</body>
+</html>
