@@ -3,7 +3,7 @@ const mindanaoData = {
         "Zamboanga del Norte": "Dipolog",
         "Zamboanga del Sur": "Pagadian",
         "Zamboanga Sibugay": "Ipil",
-        "Zamboanga City": "Zamboanga City"
+        "Sulu": "Jolo"
     },
     "Region X (Northern Mindanao)": {
         "Bukidnon": "Malaybalay",
@@ -11,8 +11,6 @@ const mindanaoData = {
         "Lanao del Norte": "Tubod",
         "Misamis Occidental": "Oroquieta",
         "Misamis Oriental": "Cagayan de Oro",
-        "Cagayan de Oro": "Cagayan de Oro",
-        "Iligan": "Iligan"
     },
     "Region XI (Davao Region)": {
         "Davao de Oro": "Nabunturan",
@@ -20,30 +18,25 @@ const mindanaoData = {
         "Davao del Sur": "Digos",
         "Davao Occidental": "Malita",
         "Davao Oriental": "Mati",
-        "Davao City": "Davao City"
     },
     "Region XII (SOCCSKSARGEN)": {
         "South Cotabato": "Koronadal",
         "Cotabato": "Kidapawan",
         "Sultan Kudarat": "Isulan",
-        "Sarangani": "Alabel",
-        "General Santos": "General Santos",
-        "Cotabato City": "Cotabato City"
+        "Sarangani": "Alabel"
     },
     "Region XIII (Caraga)": {
         "Agusan del Norte": "Cabadbaran",
         "Agusan del Sur": "Prosperidad",
         "Dinagat Islands": "San Jose",
         "Surigao del Norte": "Surigao City",
-        "Surigao del Sur": "Tandag",
-        "Butuan": "Butuan"
+        "Surigao del Sur": "Tandag"
     },
     "BARMM (Bangsamoro Autonomous Region)": {
         "Basilan": "Isabela",
         "Lanao del Sur": "Marawi",
         "Maguindanao del Norte": "Datu Odin Sinsuat",
         "Maguindanao del Sur": "Buluan",
-        "Sulu": "Jolo",
         "Tawi-Tawi": "Bongao"
     }
 };
@@ -434,4 +427,5 @@ function updateProgress() {
 // Initialize the app
 document.addEventListener('DOMContentLoaded', function() {
     updateProgress();
+
 });
